@@ -1,0 +1,543 @@
+/* Global properties  */
+:root {
+	--text-color: #171a1c;
+	--accent-color-1: #92d03e;
+	--accent-color-2: #1478c6;
+	--bg-color: #0a1e2f;
+	
+	--head-font: "Libre Baskerville";
+	--body-font: "Nunito Sans";
+}
+
+
+/* Global settings  */
+body {
+	font-family: sans-serif;
+	font-family: var(--body-font);
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+#masthead,
+#colophon,
+.navy-bg {
+	background-color: var(--bg-color)
+}
+
+.wp-block-button__link:hover {
+	text-decoration: none;
+	filter: brightness(1.1);
+}
+
+body.custom .main-navigation a {
+	color: white;
+	font-size: 1.1875rem;
+	font-weight: bold;
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  body.custom .main-navigation a {
+		font-size: 1rem;
+  }
+  body.custom .main-navigation li {
+		padding: 0 .5rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body.custom .main-navigation a {
+		font-size: .875rem;
+  }
+  body.custom .main-navigation li {
+		padding: 0 .25rem;
+  }
+}
+
+body.custom .main-navigation a:hover,
+body.custom .main-navigation a:active {
+	color: var(--accent-color-1);
+	filter: brightness(1.1);
+	text-decoration: none;
+}
+
+body.custom .main-navigation a[aria-current="page"] {
+	color: var(--accent-color-1);
+	text-decoration: none;
+}
+
+body.custom .main-navigation a[aria-current="page"]:hover {
+	cursor: default;
+	filter: none;
+}
+
+#site-navigation .menu-toggle {
+	background-color: var(--bg-color);
+}
+
+#site-navigation .menu-toggle .hamburger {
+	fill: white;
+}
+
+#site-navigation .menu-toggle .close {
+	stroke: white;
+}
+
+body.custom a {
+	color: var(--accent-color-2);
+}
+
+body.custom #content .has-blue-background-color,
+body.custom .has-blue-background-color {
+    background-color: var(--accent-color-2);
+}
+
+.site,
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-size:17px;
+	font-size: 1.0625rem / 1.75rem;
+	font-weight: 300;
+}
+
+/* Contribute menu item */
+.menu-item-830 {
+	background-color: var(--accent-color-2);
+	border-radius: 1rem;
+	padding: .25rem 1rem !important;
+}
+.menu-item-830:hover {
+	filter: brightness(1.4);
+}
+.menu-item-830 a:hover {
+	color: white !important;
+}
+@media only screen and (max-width: 480px) {
+	.toggled .menu-item-830 {
+		max-width: 10rem;
+		padding-left: 2rem !important;
+	}
+}
+
+.footer-widgets .menu-item-830 {
+	max-width: 7rem;
+	padding-left: 1rem !important;
+}
+
+.column-zero-margin .wp-block-columns {
+  margin: 20px 0;
+}
+
+.confit-phone {
+	color: white;
+	font-weight: bold;
+	padding: 1rem 0;
+}
+
+/* green separators */
+.green-bottom:after {
+	content: ""; 
+  border-bottom: 4px solid #92d03e;
+  content: ""; 
+  display: block;
+  margin: 0; 
+  padding-top: .5rem;
+  width: 4rem;
+}
+.green-bar-centered figure {
+	margin: 0 auto;
+}
+
+.green-top:before {
+  border-top: 4px solid #92d03e;
+  content: ""; 
+  display: block;
+  margin: 12px 0 0 0; 
+	padding-bottom: 12px;
+  width: 4rem;
+}
+
+.paid-for::before {
+	content: 'Authorized and ';
+}
+
+/* Home page */
+/* (plus a few meet-michele things) */
+.home .page .entry-content {
+	max-width: 988px;
+}
+
+.hp-eyebrow {
+	margin-top: 4rem;
+}
+
+.hp-hero-container {
+	margin-bottom: 0 !important;
+}
+
+.hero-head {
+	font-family: Poppins;
+	font-size: 3.125rem / 4.375rem;
+}
+
+.hp-get-involved-btn {
+	margin-bottom: 3rem;
+}
+
+.hp-featured-post-block {
+	padding-left: 0;
+}
+
+.hp-featured-post-block {
+	margin: 0 auto;
+	max-width: 660px;
+	padding: 1rem 0;
+	width: 90%;
+}
+
+.hp-featured-post-block a {
+	font-family: var(--head-font);
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+.hp-featured-post-block a {
+	color: white !important;
+}
+.hp-featured-post-block a:hover {
+	color: var(--accent-color-1) !important;
+}
+
+.hp-featured-post-block .wp-block-latest-posts__post-excerpt {
+	color: white;
+	max-width: 660px;
+}
+
+.hp-get-to-know-head,
+.hp-contribute-head,
+.hp-events-head,
+.hp-endorsements-head {
+	margin-top: 2rem;
+	margin-bottom: -.5rem;
+}
+
+/* .hp-priority-card-wrapper .ugb-7e582d5-content-wrapper {
+    grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+.hp-priority-card {
+	width: 23vw;
+}
+
+@media only screen and (max-width: 767px) {
+	.hp-priority-card {
+		margin: 0 auto;
+		width: 90vw;
+	}	
+}
+*/
+.wp-block-tfc-blocks-actblue .buttons {
+	justify-content: center
+}
+
+.wp-block-tfc-blocks-actblue a.button {
+	flex-grow: 0;
+}
+
+.hp-meet-section-subhead {
+	font-family: var(--body-font);
+	font-size: 1.25rem;
+	font-weight: normal;
+}
+
+.hp-featured-event-listing {
+	margin: 0 auto;
+	max-width: 35.625rem;
+}
+
+.hp-contribute .buttons {
+	max-width: 56.25rem;
+	margin: 0 auto;
+}
+
+.hp-contribute .button.amount,
+.hp-contribute .button.other-amount {
+	margin: .5rem;
+}
+
+.hp-featured-event {
+	margin: 0 auto;
+	max-width: 41.25rem;
+	padding: 1rem 0;
+	width: 90%;
+}
+
+.hp-featured-event li > a:first-of-type,
+.events-listings li > a:first-of-type{
+	font-size: 1.75rem;
+}
+
+.hp-endorsements img,
+.mm-endorsements img {
+	min-width: 10rem;
+}
+
+.hp-endorsements figcaption,
+.mm-endorsements figcaption {
+	font-size: 1.125rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+}
+
+.hp-more-endorsements {
+	margin-top: -4rem;
+}
+
+/* Meet Michele page */
+.meet-michele-hero {
+	margin-top: 2rem;
+}
+
+.alignleft.meet-social-icons {
+	display: flex;
+	margin-left: -13px;
+}
+
+.alignleft.meet-social-icons svg {
+	fill: black;
+}
+
+.mm-endorsements-head {
+	margin-top: 2rem;
+	margin-bottom: -.5rem;
+}
+
+/* HP NGP email signup form */
+.hp-email-form-wrapper {
+	border-bottom: 3px solid var(--accent-color-1);
+}
+
+.hp-email-form-wrapper .ngp-form {
+	max-width: 37.5rem;
+}
+
+.hp-email-form-wrapper .at-inner {
+	background-color: var(--bg-color);
+	color: white;
+}
+
+.hp-email-form-wrapper .at-title,
+.hp-email-form-wrapper .at-legend,
+.hp-email-form-wrapper .multistep-footer {
+	display: none;
+}
+
+.hp-email-form-wrapper .EmailAddress {
+	color: white;
+	font-family: "Nunito Sans";
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+.hp-email-form-wrapper .at input[type="email"] {
+	margin-top: .25rem;
+}
+
+.hp-email-form-wrapper .at-form-submit {
+	position: relative;
+	top: -1.75rem;
+}
+
+.hp-email-form-wrapper .at-form-submit .at-submit {
+	background-color: var(--accent-color-2);
+	border-radius: 27px !important;
+	color: white;
+	font-family: "Nunito Sans";
+	font-size: 1.125rem !important;
+	font-weight: bold;
+	padding: .5rem 3rem;;
+	width: 8rem:
+}
+
+.at-form .thankYou {
+	color: white;
+	font-weight: bold;
+}
+
+.at-form .thankYou p {
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Priorities page */
+.priorities-lead-in {
+	color: #999;
+	
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 2.25rem;
+}
+
+.priority-group-head {
+		margin: 0 0 2rem 0;
+}
+
+.priority-subhead {
+		margin: 0 0 1rem 0;
+}
+
+.priority-subhead + p {
+	margin-top: .25rem;
+}
+
+/* News page */
+.news-page-head {
+	margin-bottom: -.5rem;
+}
+
+.news-page-subhead {
+	font-weight: bold;
+	margin: -2rem auto 2rem !important;
+}
+
+
+#post-41 ul.wp-block-latest-posts__list,
+#post-1241 ul.wp-block-latest-posts__list {
+	margin-left: 2rem;
+	padding: 0 1rem;
+}
+
+.news-page-posts li {
+	border-bottom: 2px dotted var(--accent-color-1);
+}
+
+.news-page-posts li:not(:first-of-type) {
+	margin-top: 3rem;
+}
+
+.news-page-posts li a:first-of-type {
+	font-size: 1.5rem;
+}
+
+
+/* Events page */
+.events-page-head {
+	margin-bottom: -.5rem;
+}
+
+.events-listings h2 {
+	font-size: 1.5rem;
+}
+.events-listings li {
+	border-bottom: 2px dotted var(--accent-color-1);
+}
+
+
+
+/* Get Involved page */
+/* also may affect email form on home page */
+.get-involved-page-head {
+	margin-bottom: -.5rem;
+}
+
+#NVVolunteerForm3800000000000466 .at-title,
+#NVVolunteerForm3800000000000466 footer,
+#NVSignupForm3800000000000440 .at-title,
+#NVSignupForm3800000000000440 footer,
+#NVSignupForm3800000000000440  .at-legend {
+	display: none;
+}
+
+#NVVolunteerForm3800000000000466 .at-form-submit .at-submit,
+#NVSignupForm3800000000000440 .at-form-submit .at-submit {
+	background-color: var(--accent-color-2);
+	border-radius: 27px !important;
+	color: white !important;
+	font-family: "Nunito Sans";
+	font-size: 1.125rem !important;
+	font-weight: bold;
+	padding: .5rem 3rem;;
+	width: 8rem:
+}
+
+#NVVolunteerForm3800000000000466 .at-form-submit .at-submit:hover,
+#NVSignupForm3800000000000440 .at-form-submit .at-submit:hover {
+	filter: brightness(1.1);
+}
+
+#post-149 .at-form .thankYou,
+#post-149 .at-form  .thankYou {
+	border: 1px solid var(--accent-color-1) !important;
+	color: #999 !important;
+	padding: 1rem 2rem!important;;
+}
+
+.get-involved-lead-in {
+	font-weight: bold;
+}
+
+/* Individual post pages */
+.single-post .entry-header {
+	background-color: white;
+}
+
+.single-post .entry-header .title-meta {
+	margin: 4rem auto 0;
+	max-width: 36rem;
+	padding: 0;
+	width: 90%;
+}
+
+.single-post .entry-header h1 {
+	font-size: 2rem;
+}
+.single-post .entry-header h1:after {
+	content: ""; 
+  border-bottom: 4px solid #92d03e;
+  content: ""; 
+  display: block;
+  margin: 0; 
+  padding-top: 12px;
+  width: 4rem;
+}
+
+.single-post .posted-on {
+	display: inline-block;
+	padding-top: 1.5rem;
+}
+
+.single-post .posted-on a {
+	color: var(--text-color);
+	font-weight: normal;
+}
+.single-post .posted-on a:hover {
+	text-decoration: none;
+}
+
+.single-post #primary {
+	margin: 0 auto 0;
+	max-width: 36rem;
+	padding: 0;
+	width: 90%;
+}
+
+.single-post #primary p {
+	margin-bottom: 1.5rem;
+}
+
+.single-post #secondary {
+	display:none;
+}
+
+.single-post #jp-relatedposts {
+	display:none !important;
+}
+
+.single-post .nav-links {
+	display: none;
+}
