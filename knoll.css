@@ -226,21 +226,6 @@ textarea {
 	margin-bottom: -.5rem;
 }
 
-/* .hp-priority-card-wrapper .ugb-7e582d5-content-wrapper {
-    grid-template-columns: 1fr 1fr 1fr !important;
-}
-
-.hp-priority-card {
-	width: 23vw;
-}
-
-@media only screen and (max-width: 767px) {
-	.hp-priority-card {
-		margin: 0 auto;
-		width: 90vw;
-	}	
-}
-*/
 .wp-block-tfc-blocks-actblue .buttons {
 	justify-content: center
 }
